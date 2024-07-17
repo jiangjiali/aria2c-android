@@ -22,8 +22,8 @@ rm -rf bin
 cd c-ares
 echo "----- Build c-ares (`git describe --tags`) -----"
 autoreconf -i
-../androidbuildlib out_path=../libs minsdkversion=24 \
-	target_abis="armeabi-v7a x86 arm64-v8a x86_64" \
+../androidbuildlib out_path=../libs minsdkversion=26 \
+	target_abis="armeabi-v7a arm64-v8a" \
 	silent="$SILENT" custom_silent="--silent" \
 	configure_params="--disable-shared --enable-static"
 cd ..
@@ -33,8 +33,8 @@ cd ..
 cd libexpat/expat
 echo -e "\n\n----- Build expat (`git describe --tags`) -----"
 ./buildconf.sh
-../../androidbuildlib out_path=../../libs minsdkversion=24 \
-	target_abis="armeabi-v7a x86 arm64-v8a x86_64" \
+../../androidbuildlib out_path=../../libs minsdkversion=26 \
+	target_abis="armeabi-v7a arm64-v8a" \
 	silent="$SILENT" \
 	configure_params="--disable-shared --enable-static"
 cd ../..
@@ -43,8 +43,8 @@ cd ../..
 # Build zlib
 cd zlib
 echo -e "\n\n----- Build zlib (`git describe --tags`) -----"
-../androidbuildlib out_path=../libs minsdkversion=24 \
-	target_abis="armeabi-v7a x86 arm64-v8a x86_64" \
+../androidbuildlib out_path=../libs minsdkversion=26 \
+	target_abis="armeabi-v7a arm64-v8a" \
 	no_host="true" \
 	silent="$SILENT" custom_silent="" \
 	configure_params="--static"
@@ -60,6 +60,6 @@ cd ..
 
 
 # Build aria2
-./build_aria2.sh minsdkversion=24 \
-	target_abis="armeabi-v7a x86 arm64-v8a x86_64" \
+./build_aria2.sh minsdkversion=26 \
+	target_abis="armeabi-v7a arm64-v8a" \
 	silent="$SILENT"
