@@ -154,10 +154,9 @@ do
     
   make $make_params clean || exit
   make -j `nproc` $make_params || exit
-  ls || exit
-  $STRIP ./armeabi-v7a/bin/aria2c || exit
-  $STRIP ./arm64-v8a/bin/aria2c || exit
   make install || exit
+  $STRIP $INSTALL_DIR/armeabi-v7a/bin/aria2c || exit
+  $STRIP $INSTALL_DIR/arm64-v8a/bin/aria2c || exit
   echo "Done building $target"
 done
 
