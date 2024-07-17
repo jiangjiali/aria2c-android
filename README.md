@@ -1,5 +1,5 @@
 # aria2c-android
-[![Latest build](https://github.com/jiangjiali/aria2c-android/actions/workflows/build.yml/badge.svg?query=branch%3Amaster)](https://github.com/jiangjiali/aria2c-android/actions/workflows/build.yml/badge.svg?query=branch%3Amaster)
+[![Build](https://github.com/jiangjiali/aria2c-android/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/jiangjiali/aria2c-android/actions/workflows/build.yml)
 
 交叉编译[aria2](https://github.com/aria2/aria2)，Android运行库
 
