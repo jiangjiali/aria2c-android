@@ -14,5 +14,5 @@
 * c-ares v1.29.0
 * libexpat v2.5.0
 * libssh2 v1.11.0
-* openssl v3.0.0
+* openssl v1.1.1w
 * zlib v1.3.1
